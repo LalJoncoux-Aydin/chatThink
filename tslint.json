@@ -1,0 +1,19 @@
+{
+  "plugins": ["prettier", "@typescript-eslint"],
+  "extends": [
+    "tslint-config-airbnb",
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  }
+}

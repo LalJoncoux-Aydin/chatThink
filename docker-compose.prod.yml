@@ -1,0 +1,7 @@
+version: "3"
+services:
+    node_backend:
+        command: node build/app.js
+        environment:
+            - NODE_ENV=production
+        
